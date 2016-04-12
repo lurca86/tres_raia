@@ -1,0 +1,176 @@
+body {  
+	text-align: center;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: white;
+	padding: 20px 100px;
+	color: #1E90FF;
+}
+
+nav {
+	height:50px;
+}
+
+h1 {
+	padding: 10px;
+	background-color: #1E90FF;
+	font: bold 40px verdana, sans-serif;
+	color: white;
+	text-align: center;
+}
+
+footer {
+	padding: 10px;
+	margin: 50px 0px 0px 0px;
+	background-color: #1E90FF;
+	font: 20px verdana, sans-serif;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	padding: 10px;
+	color: #1E90FF;
+	font: 20px verdana, sans-serif;
+	text-align: center;
+}
+
+div {
+	font-size: 16px;
+	margin: 0px 5px 0px 5px;
+	padding: 10px 15px;
+	text-align: justify;
+	font-size: 16px;
+}
+
+div.menu {
+	display: inline-block;
+	cursor: pointer;
+}
+
+div.activo {	
+	color: red;
+}
+
+section p {
+	font-size: 16px;
+	padding: 10px 30px;
+	text-align: left;
+}
+
+span input {
+	display: inline-block;
+}
+
+table {
+	margin: auto;
+}
+
+th, td {
+	font-size: 16px;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+img {
+	width: 90px;
+}
+
+.grosa {
+	font-weight: bold;
+}
+
+.oculta {
+	display: none;
+}
+
+section.visibel {
+	display: block;
+}
+
+.esquema {
+	padding-left: 50px;
+}
+
+.fila {   
+    display: table-row;
+}
+
+.cela {
+    border: 1px solid #1E90FF;
+    height: 100px;
+    width: 100px;
+    display: table-cell;    
+    vertical-align: middle;
+}
+
+.baleira {
+	cursor: pointer;
+}
+
+.taboa {
+    margin: auto;
+    display: table;
+}
+
+.parpadear {
+	animation-name: parpadeo;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: parpadeo;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+.alert-box {
+    color: #555;
+    font-family: Tahoma,Geneva,Arial,sans-serif;
+	font-size: 20px;
+}
+
+.alert-box span {
+    font-weight: bold;
+    text-transform: uppercase;
+	padding: 50px;
+}
+
+.error {
+    background: #ffecec url('../imaxes/error.png') no-repeat 20px 50%;
+    border: 1px solid #f5aca6;
+}
+.success {
+    background: #e9ffd9 url('../imaxes/success.png') no-repeat 20px 50%;
+    border: 1px solid #a6ca8a;
+}
+.warning {
+    background: #fff8c4 url('../imaxes/warning.png') no-repeat 20px 50%;
+    border: 1px solid #f2c779;
+}
+.notice {
+    background: #e3f7fc url('../imaxes/notice.png') no-repeat 20px 50%;
+    border: 1px solid #8ed9f6;
+}
+
+div.visibel {
+	display: inline-block;
+}

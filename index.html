@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang='gl'>
+<head>
+	<meta charset='UTF-8'>
+	<link rel='shortcut icon' href='./imaxes/favicon.png' type='image/x-icon'/>
+	<title>.:= EXAME ORDINARIO -- Pai Fillo Nai =:.</title>
+	
+	<!--CSS-->
+	<link rel='stylesheet' type='text/css' href='./css/reset.css'/>
+	<link rel='stylesheet' type='text/css' href='./css/paiFilloNai.css'/>
+
+	<!--js-->
+	<script language='javascript' type='text/javascript' src='./scripts/paiFilloNai.js'></script>
+
+</head>
+<body>
+	<header>
+		<h1>PAI FILLO NAI</h1>
+	</header>
+	<nav id='menu'>
+		<div id='instrucions' class='menu activo' onclick="amosarOpcion(this.id)">Instrucións</div>
+		<div id='regras' class='menu' onclick="amosarOpcion(this.id)">Regras</div>
+		<div id='estatistica' class='menu' onclick="amosarOpcion(this.id)">Estatísticas</div>
+		<div id='xogador' class='menu' onclick="amosarOpcion(this.id)">Xogador</div>
+		<div id='xogo' class='menu' onclick="amosarOpcion(this.id)">Nova Partida</div>
+	</nav> 
+	<section id='seccion_instrucions' class='visibel'>
+		<h2>FONTE: Galipedia</h2>
+		<p><span class='grosa'>Pai fillo nai</span> é un xogo popular, tamén coñecido por pai nai fillo ou tres en raia, que se xoga nun taboleiro real, debuxado ou imaxinario.</p>
+		<p>O taboleiro ten forma cadrada e consta de nove posicións en tres ringleiras e tres columnas, iguais na súa disposición.</p>
+		<p>No xogo pódense usar fichas ou deixar marcas nas celas (con algo que escriba nun papel ou marcando cun pau ou co dedo na area) e participan dous xogadores (que cando se xoga sen fichas normalmente marcan cadansúa posición cos símbolos X e O).</p>
+		<p>O obxectivo do xogo é conseguir, por medio da colocación das fichas un aliñamento de tres delas do mesmo xogador, que van facendo quendas para colocar ou mover as fichas.</p>
+		<p>As únicas combinacións válidas son tres disposicións horizontais, tres verticais e dúas diagonais.</p>
+		<P>Cando se logra o obxectivo o gañador avisa ao outro xogador dicindo <span class='grosa'>Pai, fillo, nai!</span>, que é de onde lle vén o nome ao xogo.</p>
+		<p>É un xogo infantil de grande utilidade na formación do neno, xa que as posibilidades de colocación das fichas son limitadas pero moi variables. Con este xogo ensínaselle:</p>
+		<p class='esquema'>que mesmo dentro das normas sociais (e da realidade), existen sempre moitas alternativas</p>
+		<p class='esquema'>que as decisións dun momento (colocacións) poden afectar ás situacións futuras</p>
+		<p class='esquema'>visión espacial</p>
+		<p>A dinámica do xogo apréndese con facilidade para o nivel intelectual dun neno e a súa práctica ten un evidente valor pedagóxico para as matemáticas e a xeometría.</p>
+	</section>
+	<section id='seccion_regras' class='oculta'>
+		<h2>Podes colocar o teu símbolo unha vez por quenda</h2>
+		<h2>Ten que ser sobor dunha cela baleira</h2>
+		<h2>Debes conquerir unha liña recta ou diagonal</h2>
+		<h2>Se ningun dos xogadores consigue as 3 en liña, considérase empate</h2>
+		<h2><span class='grosa'>NON FAGAS TRAMPAS!!!</span></h2>
+	</section>
+	<section id='seccion_estatistica' class='oculta'>
+	</section>
+	<section id='seccion_xogador' class='oculta'>
+		<h2>XOGADOR</h2>
+		<span><input type='text' onchange='cambiarXogador(this.value);'></span>
+	</section>
+	<section id='seccion_xogo' class='oculta'>
+		<h2 id='quendaXogador'></h2>
+		<div class='taboa'>
+			<div class='fila'>
+				<div id='cela00' class='cela baleira' onclick="colocarFicha(0,0)"></div>
+				<div id='cela01' class='cela baleira' onclick="colocarFicha(0,1)"></div>
+				<div id='cela02' class='cela baleira' onclick="colocarFicha(0,2)"></div>
+			</div>
+			<div class='fila'>
+				<div id='cela10' class='cela baleira' onclick="colocarFicha(1,0)"></div>
+				<div id='cela11' class='cela baleira' onclick="colocarFicha(1,1)"></div>
+				<div id='cela12' class='cela baleira' onclick="colocarFicha(1,2)"></div>
+			</div>
+			<div class='fila'>
+				<div id='cela20' class='cela baleira' onclick="colocarFicha(2,0)"></div>
+				<div id='cela21' class='cela baleira' onclick="colocarFicha(2,1)"></div>
+				<div id='cela22' class='cela baleira' onclick="colocarFicha(2,2)"></div>
+			</div>
+		</div>                    
+		<div id='informe' class='alert-box error oculta'><span id='informacion'></span></div>
+	</section>
+	<footer>
+		<p>2015 Desenvolvido por <span id='autor'>Jotaeme Sierra</span></p>
+		<p>Ciclo Superior Desenvolvemento de Aplicacións Web</p>
+	</footer>
+</body>
+</html>
